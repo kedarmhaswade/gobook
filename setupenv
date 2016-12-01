@@ -1,0 +1,4 @@
+MYDIR=$( cd "$( dirname "$0" )" && pwd )
+export GOROOT=/usr/lib/go-1.6
+export GOPATH=${MYDIR}
+export PATH=$PATH:$GOROOT/bin

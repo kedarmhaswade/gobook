@@ -1,0 +1,96 @@
+<component name="libraryTable">
+  <library name="GOPATH &lt;exercises&gt;">
+    <CLASSES>
+      <root url="file:///usr/lib/go-1.6/src/sort" />
+      <root url="file:///usr/lib/go-1.6/src/archive" />
+      <root url="file:///usr/lib/go-1.6/src/index" />
+      <root url="file:///usr/lib/go-1.6/src/testing" />
+      <root url="file:///usr/lib/go-1.6/src/io" />
+      <root url="file:///usr/lib/go-1.6/src/compress" />
+      <root url="file:///usr/lib/go-1.6/src/image" />
+      <root url="file:///usr/lib/go-1.6/src/net" />
+      <root url="file:///usr/lib/go-1.6/src/text" />
+      <root url="file:///usr/lib/go-1.6/src/html" />
+      <root url="file:///usr/lib/go-1.6/src/reflect" />
+      <root url="file:///usr/lib/go-1.6/src/path" />
+      <root url="file:///usr/lib/go-1.6/src/fmt" />
+      <root url="file:///usr/lib/go-1.6/src/mime" />
+      <root url="file:///usr/lib/go-1.6/src/container" />
+      <root url="file:///usr/lib/go-1.6/src/time" />
+      <root url="file:///usr/lib/go-1.6/src/bytes" />
+      <root url="file:///usr/lib/go-1.6/src/go" />
+      <root url="file:///usr/lib/go-1.6/src/builtin" />
+      <root url="file:///usr/lib/go-1.6/src/os" />
+      <root url="file:///usr/lib/go-1.6/src/runtime" />
+      <root url="file:///usr/lib/go-1.6/src/debug" />
+      <root url="file:///usr/lib/go-1.6/src/vendor" />
+      <root url="file:///usr/lib/go-1.6/src/strings" />
+      <root url="file:///usr/lib/go-1.6/src/database" />
+      <root url="file:///usr/lib/go-1.6/src/unsafe" />
+      <root url="file:///usr/lib/go-1.6/src/log" />
+      <root url="file:///usr/lib/go-1.6/src/expvar" />
+      <root url="file:///usr/lib/go-1.6/src/flag" />
+      <root url="file:///usr/lib/go-1.6/src/internal" />
+      <root url="file:///usr/lib/go-1.6/src/bufio" />
+      <root url="file:///usr/lib/go-1.6/src/regexp" />
+      <root url="file:///usr/lib/go-1.6/src/syscall" />
+      <root url="file:///usr/lib/go-1.6/src/errors" />
+      <root url="file:///usr/lib/go-1.6/src/hash" />
+      <root url="file:///usr/lib/go-1.6/src/cmd" />
+      <root url="file:///usr/lib/go-1.6/src/math" />
+      <root url="file:///usr/lib/go-1.6/src/unicode" />
+      <root url="file:///usr/lib/go-1.6/src/strconv" />
+      <root url="file:///usr/lib/go-1.6/src/crypto" />
+      <root url="file:///usr/lib/go-1.6/src/sync" />
+      <root url="file:///usr/lib/go-1.6/src/encoding" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file:///usr/lib/go-1.6/src/sort" />
+      <root url="file:///usr/lib/go-1.6/src/archive" />
+      <root url="file:///usr/lib/go-1.6/src/index" />
+      <root url="file:///usr/lib/go-1.6/src/testing" />
+      <root url="file:///usr/lib/go-1.6/src/io" />
+      <root url="file:///usr/lib/go-1.6/src/compress" />
+      <root url="file:///usr/lib/go-1.6/src/image" />
+      <root url="file:///usr/lib/go-1.6/src/net" />
+      <root url="file:///usr/lib/go-1.6/src/text" />
+      <root url="file:///usr/lib/go-1.6/src/html" />
+      <root url="file:///usr/lib/go-1.6/src/reflect" />
+      <root url="file:///usr/lib/go-1.6/src/path" />
+      <root url="file:///usr/lib/go-1.6/src/fmt" />
+      <root url="file:///usr/lib/go-1.6/src/mime" />
+      <root url="file:///usr/lib/go-1.6/src/container" />
+      <root url="file:///usr/lib/go-1.6/src/time" />
+      <root url="file:///usr/lib/go-1.6/src/bytes" />
+      <root url="file:///usr/lib/go-1.6/src/go" />
+      <root url="file:///usr/lib/go-1.6/src/builtin" />
+      <root url="file:///usr/lib/go-1.6/src/os" />
+      <root url="file:///usr/lib/go-1.6/src/runtime" />
+      <root url="file:///usr/lib/go-1.6/src/debug" />
+      <root url="file:///usr/lib/go-1.6/src/vendor" />
+      <root url="file:///usr/lib/go-1.6/src/strings" />
+      <root url="file:///usr/lib/go-1.6/src/database" />
+      <root url="file:///usr/lib/go-1.6/src/unsafe" />
+      <root url="file:///usr/lib/go-1.6/src/log" />
+      <root url="file:///usr/lib/go-1.6/src/expvar" />
+      <root url="file:///usr/lib/go-1.6/src/flag" />
+      <root url="file:///usr/lib/go-1.6/src/internal" />
+      <root url="file:///usr/lib/go-1.6/src/bufio" />
+      <root url="file:///usr/lib/go-1.6/src/regexp" />
+      <root url="file:///usr/lib/go-1.6/src/syscall" />
+      <root url="file:///usr/lib/go-1.6/src/errors" />
+      <root url="file:///usr/lib/go-1.6/src/hash" />
+      <root url="file:///usr/lib/go-1.6/src/cmd" />
+      <root url="file:///usr/lib/go-1.6/src/math" />
+      <root url="file:///usr/lib/go-1.6/src/unicode" />
+      <root url="file:///usr/lib/go-1.6/src/strconv" />
+      <root url="file:///usr/lib/go-1.6/src/crypto" />
+      <root url="file:///usr/lib/go-1.6/src/sync" />
+      <root url="file:///usr/lib/go-1.6/src/encoding" />
+    </SOURCES>
+    <excluded>
+      <root url="file://$PROJECT_DIR$" />
+    </excluded>
+  </library>
+</component>
