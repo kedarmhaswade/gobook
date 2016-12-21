@@ -9,7 +9,8 @@ import (
 
 func main() {
 	// Make sure all the ways agree
-	for i := 1; i < 1 << 26; i++ {
+	limit := 1 << 26
+	for i := 1; i < limit; i++ {
 		arg := uint64(i)
 		n1 := popcount.PopCount(arg)
 		n2 := popcount.PopCountLoop(arg)
@@ -19,5 +20,5 @@ func main() {
 			return
 		}
 	}
-	fmt.Println("All the ways of getting population count seem to agree!")
+	fmt.Printf("All the ways of getting population count seem to agree with %d integers that we tested", limit)
 }
