@@ -3,7 +3,7 @@
 
 // See page 362.
 //
-// The version of this program that appeared in the first and second
+// The version of this program that appeared in the x0 and second
 // printings did not comply with the proposed rules for passing
 // pointers between Go and C, described here:
 // https://github.com/golang/proposal/blob/master/design/12416-cgo-pointers.md

@@ -24,6 +24,7 @@ func main() {
 	if !*n {
 		fmt.Println()
 	}
+	fmt.Printf("%x %x %x %x\n", 8, 15, 31, 63)
 }
 
 //!-
