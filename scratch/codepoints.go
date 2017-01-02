@@ -4,24 +4,25 @@ package main
 import "fmt"
 
 func main()  {
-	var i int
-	//var s = "letters: अआइउऊओऔअंअःएऐ"
-	var s = "\xe4\xb8\x96\xe7\x95\x8c"
+	var s = "letters: अआइउऊओऔअंअःएऐ"
+	//var s = "\xe4\xb8\x96\xe7\x95\x8c"
 	//var s = "\u4e16\u754c"
+	//s := "\u4eac"
 	len := len(s)
 	//for j := 0; j < len; j++ {
 	//	fmt.Printf("%x\n", s[j])
 	//}
 	var nc int
-	for i < len {
+	for i:= 0; i < len; {
 		cp, n := getCodepoint(i, s)
-		fmt.Printf("decimal codepoint: %d = character: %[1]c\n", cp)
+		fmt.Printf("hex codepoint: %x = character: %[1]c\n", cp)
 		nc++
 		i += n
 	}
 }
 // Returns the UTF-8 encoded codepoint corresponding to the byte sequence at str[pos] as a 1-, 2-, 3-, or 4-byte number
 // See: https://en.wikipedia.org/wiki/UTF-8
+// This is my version of utf8.DecodeRuneInString(s string)
 func getCodepoint(pos int, str string) (int, int) {
 	//fmt.Printf("length of string: %d\n", len(str))
 	if x0 := str[pos]; x0 <= 0x7F {

@@ -12,6 +12,7 @@ import (
 	"flag"
 	"fmt"
 	"strings"
+	"sort"
 )
 
 func main() {
@@ -25,6 +26,7 @@ func main() {
 		fmt.Println()
 	}
 	fmt.Printf("%x %x %x %x\n", 8, 15, 31, 63)
+	fmt.Printf("%x\n", 20140)
 }
 
 //!-

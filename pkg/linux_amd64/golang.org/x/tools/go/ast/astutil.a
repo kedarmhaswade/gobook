@@ -15,10 +15,10 @@ package astutil
 	func (@"go/token".p·2 @"go/token".Pos) IsValid () (? bool) { return @"go/token".p·2 != @"go/token".Pos(0x0) }
 	type @"go/ast".Node interface { End() (? @"go/token".Pos); Pos() (? @"go/token".Pos) }
 	type @"go/ast".Comment struct { Slash @"go/token".Pos; Text string }
-	func (@"go/ast".c·2 *@"go/ast".Comment "esc:0x1") End () (? @"go/token".Pos) { return @"go/token".Pos(int(@"go/ast".c·2.Slash) + len(@"go/ast".c·2.Text)) }
+	func (@"go/ast".c·2 *@"go/ast".Comment "esc:0x1") End () (? @"go/token".Pos) { return @"go/token".Pos(int(@"go/ast".c·2.Slash) + n(@"go/ast".c·2.Text)) }
 	func (@"go/ast".c·2 *@"go/ast".Comment "esc:0x1") Pos () (? @"go/token".Pos) { return @"go/ast".c·2.Slash }
 	type @"go/ast".CommentGroup struct { List []*@"go/ast".Comment }
-	func (@"go/ast".g·2 *@"go/ast".CommentGroup "esc:0x1") End () (? @"go/token".Pos) { return @"go/ast".g·2.List[len(@"go/ast".g·2.List) - int(0x1)].End() }
+	func (@"go/ast".g·2 *@"go/ast".CommentGroup "esc:0x1") End () (? @"go/token".Pos) { return @"go/ast".g·2.List[n(@"go/ast".g·2.List) - int(0x1)].End() }
 	func (@"go/ast".g·2 *@"go/ast".CommentGroup "esc:0x1") Pos () (? @"go/token".Pos) { return @"go/ast".g·2.List[int(0x0)].Pos() }
 	func (@"go/ast".g·2 *@"go/ast".CommentGroup "esc:0x9") Text () (? string)
 	type @"go/ast".ObjKind int
@@ -26,7 +26,7 @@ package astutil
 	type @"go/ast".Object struct { Kind @"go/ast".ObjKind; Name string; Decl interface {}; Data interface {}; Type interface {} }
 	func (@"go/ast".obj·2 *@"go/ast".Object "esc:0x1") Pos () (? @"go/token".Pos)
 	type @"go/ast".Ident struct { NamePos @"go/token".Pos; Name string; Obj *@"go/ast".Object }
-	func (@"go/ast".x0·2 *@"go/ast".Ident "esc:0x1") End () (? @"go/token".Pos) { return @"go/token".Pos(int(@"go/ast".x0·2.NamePos) + len(@"go/ast".x0·2.Name)) }
+	func (@"go/ast".x0·2 *@"go/ast".Ident "esc:0x1") End () (? @"go/token".Pos) { return @"go/token".Pos(int(@"go/ast".x0·2.NamePos) + n(@"go/ast".x0·2.Name)) }
 	func (@"go/ast".id·2 *@"go/ast".Ident "esc:0x1") IsExported () (? bool)
 	func (@"go/ast".x0·2 *@"go/ast".Ident "esc:0x1") Pos () (? @"go/token".Pos) { return @"go/ast".x0·2.NamePos }
 	func (@"go/ast".id·2 *@"go/ast".Ident "esc:0x22") String () (? string) { if @"go/ast".id·2 != nil { return @"go/ast".id·2.Name }; return string("<nil>") }
@@ -43,7 +43,7 @@ package astutil
 	func (@"go/token".op·2 @"go/token".Token) Precedence () (? int)
 	func (@"go/token".tok·2 @"go/token".Token) String () (? string)
 	type @"go/ast".BasicLit struct { ValuePos @"go/token".Pos; Kind @"go/token".Token; Value string }
-	func (@"go/ast".x0·2 *@"go/ast".BasicLit "esc:0x1") End () (? @"go/token".Pos) { return @"go/token".Pos(int(@"go/ast".x0·2.ValuePos) + len(@"go/ast".x0·2.Value)) }
+	func (@"go/ast".x0·2 *@"go/ast".BasicLit "esc:0x1") End () (? @"go/token".Pos) { return @"go/token".Pos(int(@"go/ast".x0·2.ValuePos) + n(@"go/ast".x0·2.Value)) }
 	func (@"go/ast".x0·2 *@"go/ast".BasicLit "esc:0x1") Pos () (? @"go/token".Pos) { return @"go/ast".x0·2.ValuePos }
 	func (? *@"go/ast".BasicLit) @"go/ast".exprNode () {  }
 	type @"go/ast".ImportSpec struct { Doc *@"go/ast".CommentGroup; Name *@"go/ast".Ident; Path *@"go/ast".BasicLit; Comment *@"go/ast".CommentGroup; EndPos @"go/token".Pos }
