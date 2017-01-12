@@ -8,7 +8,6 @@ import (
 )
 
 const (
-	X float32 = 9
 	KB = 1000
 	MB = KB * KB
 	GB = KB * MB
