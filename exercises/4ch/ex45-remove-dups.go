@@ -4,7 +4,7 @@ package main
 import "fmt"
 
 func removeAdjacentDupStringsInPlace(strings []string) []string {
-	if  len(strings) <= 1 {
+	if len(strings) <= 1 {
 		return strings
 	}
 	var prev string = strings[0]
@@ -20,13 +20,21 @@ func removeAdjacentDupStringsInPlace(strings []string) []string {
 	return strings[:j]
 }
 func main() {
-	a := [...]string {"abc", "bcd", "bcd", "cdd", "cdd", "c", "d"}
+	a := [...]string{"abc", "bcd", "bcd", "cdd", "cdd", "c", "d"}
 	s := a[:]
-	fmt.Printf("%s\n", s)
+	fmt.Printf("before: %s\n", s)
 	s = removeAdjacentDupStringsInPlace(s)
-	fmt.Printf("%s\n", s)
-	b := [...]string {"\u4e16\u754c", "\u4e16\u754c", "\u4e16"}
+	fmt.Printf("after : %s\n", s)
+	s = removeAdjacentDupStringsInPlace(s)
+	fmt.Printf("after : %s\n", s)
+	b := [...]string{"\u4e16\u754c", "\u4e16\u754c", "\u4e16"}
 	s = b[:]
-	fmt.Printf("%s\n", s)
+	fmt.Printf("before: %s\n", s)
 	s = removeAdjacentDupStringsInPlace(s)
-	fmt.Printf("%s\n", s)}
+	fmt.Printf("after : %s\n", s)
+	c := [...]string{"केदार", "केदार", "दीपा"}
+	s = c[:]
+	fmt.Printf("before: %s\n", s)
+	s = removeAdjacentDupStringsInPlace(s)
+	fmt.Printf("after : %s\n", s)
+}

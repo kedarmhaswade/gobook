@@ -15,6 +15,8 @@ func main() {
 	ab := byteProvider()
 	fmt.Printf("%T \n", ab)
 	fmt.Printf("%b\n%b\n", 120, 88)
+	fmt.Printf("len(ab) = %d\n", len(ab))
+	fmt.Printf("cap(ab) = %d\n", cap(ab))
 }
 func byteProvider() []byte {
 	return []byte{100, 200}

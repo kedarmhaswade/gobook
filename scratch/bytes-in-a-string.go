@@ -5,9 +5,28 @@ import "fmt"
 
 func main() {
 	s := "₹"
-	len := len(s)
-	fmt.Printf("number of bytes in of s = %d\n", len)
-	for i := 0; i < len; i++ {
+	writeBytes(s)
+	s = "म"
+	writeBytes(s)
+	s = "्"
+	writeBytes(s)
+	s = "म्ह"
+	writeBytes(s)
+	s = "ह"
+	writeBytes(s)
+	s = "मह"
+	writeBytes(s)
+	s = "क"
+	writeBytes(s)
+	s = "a"
+	writeBytes(s)
+	s = "\u00a2"
+	writeBytes(s)
+}
+func writeBytes(s string) {
+	n := len(s)
+	fmt.Printf("number of bytes in %s = %d\n", s, n)
+	for i := 0; i < n; i++ {
 		fmt.Printf("byte%d: %x\n", i, s[i])
 	}
 }

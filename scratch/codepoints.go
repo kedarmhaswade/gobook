@@ -4,18 +4,21 @@ package main
 import "fmt"
 
 func main()  {
-	var s = "letters: अआइउऊओऔअंअःएऐ"
+	s := "क"
+	//s := "\xe0\xa4\xbb"
+	//s := "\xe0\xa5\x8d"
+	//var s = "letters: अआइउऊओऔअंअःएऐ"
 	//var s = "\xe4\xb8\x96\xe7\x95\x8c"
 	//var s = "\u4e16\u754c"
 	//s := "\u4eac"
-	len := len(s)
-	//for j := 0; j < len; j++ {
+	n := len(s)
+	//for j := 0; j < n; j++ {
 	//	fmt.Printf("%x\n", s[j])
 	//}
 	var nc int
-	for i:= 0; i < len; {
+	for i:= 0; i < n; {
 		cp, n := getCodepoint(i, s)
-		fmt.Printf("hex codepoint: %x = character: %[1]c\n", cp)
+		fmt.Printf("hex(decimal) codepoint = %x(%[1]d) and character = %[1]c\n", cp)
 		nc++
 		i += n
 	}
